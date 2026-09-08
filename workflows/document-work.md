@@ -1,36 +1,36 @@
-# Document Work Workflow
+# Document Work Workflow（文档工作流程）
 
-> 本文件定义 report、paper、proposal、presentation planning 与 technical documentation 的工作流程。
-> 创建或重构正式文档时应读取；信息组织和验证步骤以本文件为 authoritative source。
+> 本文件定义报告、论文、提案、演示规划和技术文档的工作流程。
+> 创建或重构正式文档时应读取；信息组织和验证步骤只在这里维护。
 
-## Start With Intent
+## 先明确写给谁、解决什么问题
 
 写作前先确认：
 
-- audience：谁会阅读，具有什么背景。
-- purpose：文档需要支持什么理解或决定。
-- information hierarchy：哪些是结论、证据、细节与附录。
+- 读者：谁会阅读，具有什么背景。
+- 目的：文档需要帮助读者理解什么或做出什么决定。
+- 信息层级：哪些内容是结论、证据、细节和附录。
 
-## Process
+## 流程
 
 ```text
-Audience and purpose
+读者与目的
 ↓
-Source and constraints
+资料与限制
 ↓
-Information hierarchy
+信息层级
 ↓
-Draft
+起草
 ↓
-Content verification
+核验内容
 ↓
-Format and visual verification
+检查格式与最终外观
 ↓
-Delivery
+交付
 ```
 
 文档不是内容堆积。结构应服务于读者的阅读顺序，事实应可追溯，推断不应伪装成结果。
 
-## Verification
+## 验证
 
 内容检查与视觉检查是不同步骤。根据格式验证引用、链接、表格、分页、层级和最终渲染；没有执行的检查不得声称通过。

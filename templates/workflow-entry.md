@@ -1,38 +1,38 @@
 # Workflow Entry Template
 
 > 本文件是新增 Workflow 的结构模板。
-> 确认存在稳定、可复用的工作模式时使用；正式索引以 [WORKFLOWS.md](../WORKFLOWS.md) 为 authoritative source。
+> 确认存在稳定、可复用的工作模式时使用；正式索引以 [WORKFLOWS.md](../WORKFLOWS.md) 为准。
 
-## Purpose
+## 用途（Purpose）
 
-To be maintained
+待填写
 
-## Trigger
+## 什么时候使用（Trigger）
 
-To be maintained
+待填写
 
-## Inputs
+## 输入（Inputs）
 
-To be maintained
+待填写
 
-## Process
+## 流程（Process）
 
 ```text
-To be maintained
+待填写
 ```
 
-## Verification
+## 验证（Verification）
 
-To be maintained
+待填写
 
-## Outputs
+## 输出（Outputs）
 
-To be maintained
+待填写
 
-## Failure modes
+## 常见失败情况（Failure modes）
 
-To be maintained
+待填写
 
-## Last reviewed
+## 最后检查日期（Last reviewed）
 
 YYYY-MM-DD

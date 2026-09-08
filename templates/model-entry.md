@@ -1,44 +1,44 @@
 # Model Entry Template
 
 > 本文件是模型评估条目的模板。
-> 实际验证一个模型后使用；当前模型 Registry 与状态以 [MODELS.md](../MODELS.md) 为 authoritative source。
+> 实际验证一个模型后使用；当前模型 Registry 和状态以 [MODELS.md](../MODELS.md) 为准。
 
-## Model
+## 模型（Model）
 
-To be maintained
+待填写
 
-## Provider
+## 提供方（Provider）
 
-To be maintained
+待填写
 
-## Role
+## 主要职责（Role）
 
-To be maintained
+待填写
 
-## Strengths
+## 优势（Strengths）
 
-To evaluate
+待评估
 
-## Weaknesses
+## 弱点（Weaknesses）
 
-To evaluate
+待评估
 
-## Best use
+## 适合使用（Best use）
 
-To evaluate
+待评估
 
-## Avoid use
+## 不适合使用（Avoid use）
 
-To evaluate
+待评估
 
-## Reasoning modes
+## 推理模式（Reasoning modes）
 
-To evaluate
+待评估
 
-## Quota / cost notes
+## 额度与成本（Quota / cost notes）
 
-To be maintained
+待填写
 
-## Last verified
+## 最后核验日期（Last verified）
 
-Not verified
+尚未核验

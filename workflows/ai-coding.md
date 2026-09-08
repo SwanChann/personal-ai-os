@@ -1,61 +1,61 @@
-# AI Coding Workflow
+# AI Coding Workflow（AI 编码流程）
 
-> 本文件定义长期使用的 AI Coding 执行流程。
-> 进行软件开发或 Repository 修改时应读取；流程步骤以本文件为 authoritative source，Codex 的行为边界以 [CODEX.md](../CODEX.md) 为准。
+> 本文件定义日常使用的 AI Coding 流程。
+> 开发软件或修改代码仓库时应读取；具体步骤只在这里维护，Codex 的行为边界见 [CODEX.md](../CODEX.md)。
 
-## Purpose
+## 目的
 
 让 AI 端到端承担大量实现工作，同时让人类继续拥有项目所需的系统级理解与最终验收权。
 
-## Process
+## 流程
 
 ```text
-Goal definition
+明确目标
 ↓
-Context acquisition
+获取上下文
 ↓
-Repository understanding
+理解现有项目
 ↓
-Solution design
+设计方案
 ↓
-AI implementation
+AI 实现
 ↓
-Automated verification
+自动验证
 ↓
-Human outcome validation
+人类验收结果
 ↓
-Architecture sync
+同步架构认知
 ```
 
-### Goal definition
+### 明确目标
 
-明确交付物、成功条件、范围和风险边界。简单任务不需要额外仪式；大任务应先消除会改变 Architecture 的歧义。
+明确要交付什么、怎样算成功、修改范围多大，以及哪些风险不能由 AI 自行决定。简单任务不需要额外仪式；大型任务应先澄清会影响架构的关键问题。
 
-### Context acquisition and Repository understanding
+### 获取上下文并理解项目
 
-检查相关文件、现有约定、依赖、测试与工作区状态。先理解已有系统，再决定修改方式。
+检查相关文件、现有约定、依赖、测试和 Git 状态。先理解已有系统，再决定怎么改。
 
-### Solution design and implementation
+### 设计并实现
 
-选择支持当前目标的 minimum coherent change。AI 可以自主编码、重构局部实现与补充必要文档，但不扩大授权范围。
+选择“最小完整改动”：只改完成目标所需的内容，同时保证结果完整可用。AI 可以自主编码、局部重构和补充必要文档，但不能扩大授权范围。
 
-### Verification and validation
+### 验证与验收
 
-AI 根据风险执行自动化检查并如实报告结果；Human 从需求与实际体验角度验收 outcome。高风险变更需要更深入的回归与边界检查。
+AI 根据风险执行自动化检查，并如实报告结果；人类从需求和实际体验角度验收。高风险修改需要更深入的回归和边界检查。
 
-### Architecture sync
+### 同步架构认知
 
-重要变更后，更新人类对系统结构的认知。同步内容应聚焦 system purpose、modules、APIs、Data Flow、important dependencies 与 major design decisions。
+重要修改后，AI 应帮助人类更新对系统的理解，重点说明系统用途、模块、接口、数据流、重要依赖和主要设计决策。
 
-## Ownership Principle
+## 人类需要理解到什么程度
 
-> Human does not need to understand every line of AI-generated code. Human should understand the system at the level required to continue owning the project.
+> 人类不必理解 AI 生成的每一行代码，但应理解到足以继续掌控和维护项目的程度。
 
 这意味着解释应覆盖影响后续决策的结构，而不是默认逐行复述实现。
 
-## Outputs
+## 应交付什么
 
 - 可验证的代码或配置变更
-- 与风险匹配的 Verification 结果
+- 与风险匹配的验证结果
 - 简洁的影响说明
 - 必要时更新的长期知识

@@ -1,34 +1,34 @@
-# Technical Discussion Workflow
+# Technical Discussion Workflow（技术讨论流程）
 
-> 本文件定义复杂技术讨论的默认推理结构。
-> 讨论 Agent、Harness、AI Coding、model capability、Research Workflow 或系统 Architecture 时应读取；讨论方法以本文件为 authoritative source。
+> 本文件定义复杂技术讨论的默认思考顺序。
+> 讨论 Agent、Harness、AI Coding、模型能力、研究流程或系统架构时应读取；讨论方法只在这里维护。
 
-## Process
+## 流程
 
 ```text
-Question
+提出问题
 ↓
-Check premise
+检查前提
 ↓
-Define concepts
+定义概念
 ↓
-Build mental model
+建立整体认识
 ↓
-Compare alternatives
+比较方案
 ↓
-Independent judgment
+给出独立判断
 ↓
-Practical implication
+说明实际影响
 ```
 
-## Discussion Standard
+## 讨论要求
 
-先检查问题是否建立在准确、充分且当前的前提上，再定义会影响判断的核心概念。回答应建立概念之间的关系，比较真正可行的 alternatives，并给出有证据边界的独立判断。
+先检查问题是否建立在准确、充分且仍然有效的前提上，再定义会影响判断的核心概念。回答应说明概念之间的关系，比较真正可行的方案，并给出有证据边界的独立判断。
 
-## Presentation
+## 怎样组织回答
 
-优先呈现核心论点、连贯的结构化解释和少量必要列表。不要把一个完整 mental model 拆成十几二十个孤立小点，也不要用术语堆叠代替关系说明。
+优先呈现核心论点、连贯解释和少量必要列表。不要把完整认识拆成十几二十个孤立小点，也不要用术语堆叠代替关系说明。
 
-## Practical Implication
+## 怎样落到实际行动
 
 结尾说明判断对当前任务、选择或下一步行动意味着什么。若证据不足，应指出缺失信息及其可能改变的结论。

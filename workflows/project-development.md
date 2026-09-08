@@ -1,40 +1,40 @@
-# Project Development Workflow
+# Project Development Workflow（项目开发流程）
 
-> 本文件定义从零搭建项目或交付大型功能的端到端流程。
-> 网站、Research OS、AI 系统、工具、App 或大型功能启动时应读取；项目阶段以本文件为 authoritative source。
+> 本文件定义从零搭建项目或交付大型功能的完整流程。
+> 网站、Research OS、AI 系统、工具、App 或大型功能启动时应读取；项目阶段只在这里维护。
 
-## Process
+## 流程
 
 ```text
-Problem
+定义问题
 ↓
-Requirements
+明确需求
 ↓
-Architecture
+设计架构
 ↓
-Milestones
+划分里程碑
 ↓
-Implementation
+实现
 ↓
-Verification
+验证
 ↓
-Iteration
+迭代
 ↓
-Maintenance
+维护
 ```
 
-## Operating Principle
+## 架构原则
 
-先定义问题、使用者、成功条件与约束，再设计 Architecture。采用：
+先定义问题、使用者、成功条件和约束，再设计架构。采用：
 
-> simplest architecture that supports expected evolution
+> 能够支持预期演进的最简架构
 
 不要在证据不足时追求完美架构，也不要用临时拼接阻断可预见的近期演进。
 
-## Milestones and Implementation
+## 里程碑与实现
 
-Milestone 应产生可检查的 outcome。按依赖顺序增量实现，每个主要阶段完成后验证，再进入下一阶段。计划是可调整的工作假设，不是不能改变的承诺。
+每个里程碑都应产生可以检查的结果。按依赖顺序逐步实现，每个主要阶段完成后先验证，再进入下一阶段。计划是可以根据新证据调整的工作假设。
 
-## Maintenance
+## 交付与维护
 
-交付时保留足够的 Architecture、Data Flow、依赖、运行方式和技术债信息，使项目可以由未来的人类或 Agent 继续维护。具体 coding 执行使用 [AI Coding Workflow](./ai-coding.md)。
+交付时保留足够的架构、数据流、依赖、运行方式和技术债信息，使未来的人类或 Agent 能够继续维护。具体编码过程使用 [AI Coding Workflow](./ai-coding.md)。

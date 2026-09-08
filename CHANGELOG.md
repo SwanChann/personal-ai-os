@@ -1,19 +1,21 @@
 # Changelog
 
-> 本文件记录 Personal AI OS 的重要演进。
-> 追踪 Workflow、默认模型、Skill、policy 或 toolchain 变化时应读取；这些变更的时间线以本文件为 authoritative source。
+> 本文件记录 Personal AI OS 的重要变化。
+> 查看 Workflow、默认模型、Skill、规则或工具链的变更时应读取；变更历史只在这里维护。
 
 ## 2026-09-08
 
-### Changed
+### Changed（修改）
 
 - Established Personal AI OS version 0.1 as the active baseline.
+- Rewrote unclear mixed-language passages into direct Chinese and added short explanations for necessary technical terms.
+- Replaced the placeholder Skill row with locally verified, commonly used Skills.
 
-### Added
+### Added（新增）
 
-- Added the core collaboration protocols, dynamic registries, five Workflows, four reusable Prompts, maintenance templates and Archive policy.
+- 建立核心协作协议、动态 Registry、五个 Workflow、四个可复用 Prompt、维护模板和归档规则。
 
-### Deprecated
+### Deprecated（弃用）
 
 - None.
 

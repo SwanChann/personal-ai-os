@@ -1,14 +1,14 @@
 # Project Start Prompt
 
 > 本文件提供从零或大型项目的启动 Prompt。
-> 需要 Agent 端到端搭建系统时使用；Prompt 正文以本文件为 authoritative source。
+> 需要 Agent 从目标到交付完整推进项目时使用；具体 Prompt 只在这里维护。
 
 ## Prompt
 
 ```text
 这是一个端到端项目任务。
 
-先理解目标、使用者、成功条件和范围，再检查现有环境。定义支持预期演进的最简 Architecture，把工作拆成可验证的 Milestone，然后增量实现并验证每个主要阶段。
+先理解目标、使用者、成功条件和范围，再检查现有环境。设计能够支持预期演进的最简架构，把工作拆成可以验收的阶段，然后逐步实现并验证每个主要阶段。
 
-在执行中维护项目级理解：modules、APIs、Data Flow、dependencies、major decisions 和 technical debt。不要擅自扩大范围；完成后交付可验证结果和必要的 Architecture 同步。
+执行过程中要维护对整个项目的理解，包括模块、接口、数据流、依赖、主要决策和技术债。不要擅自扩大范围；完成后交付可验证的结果，并说明重要的架构变化。
 ```

@@ -1,40 +1,40 @@
 # Skill Entry Template
 
-> 本文件是新增 Skill 记录的模板。
-> 确认一个 Skill 真实存在并值得登记时使用；正式状态仍以 [SKILLS.md](../SKILLS.md) 为 authoritative source。
+> 本文件是新增 Skill 条目的模板。
+> 确认 Skill 真实存在并值得登记时使用；正式状态仍以 [SKILLS.md](../SKILLS.md) 为准。
 
-## Name
+## 名称（Name）
 
-To be maintained
+待填写
 
-## Category
+## 类别（Category）
 
-To be maintained
+待填写
 
-## Purpose
+## 用途（Purpose）
 
-To be maintained
+待填写
 
-## Trigger
+## 什么时候使用（Trigger）
 
-To be maintained
+待填写
 
-## When not to use
+## 什么时候不使用（When not to use）
 
-To be maintained
+待填写
 
-## Dependencies
+## 依赖（Dependencies）
 
-To be maintained
+待填写
 
-## Status
+## 状态（Status）
 
 experimental
 
-## Last reviewed
+## 最后检查日期（Last reviewed）
 
 YYYY-MM-DD
 
-## Notes
+## 备注（Notes）
 
-To be maintained
+待填写

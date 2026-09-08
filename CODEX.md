@@ -1,76 +1,76 @@
 # Codex
 
-> This file defines my default Codex collaboration protocol.
-> Codex 在处理 coding、Repository 或实现任务时应读取；本文件是 Codex 行为协议的 authoritative source，当前用户指令可覆盖它。
+> 本文件定义 Codex 的默认协作方式。
+> 处理编码、项目文件或实现任务时应读取；本文件是 Codex 协作协议的唯一维护源，当前用户指令可以覆盖它。
 
-## Codex Role
+## Codex 负责什么
 
-Codex 默认负责 coding、Repository understanding、project development、refactoring、testing、debugging、Repository maintenance 和 implementation research。
+Codex 默认负责理解代码仓库、开发项目、实现功能、重构、测试、调试、维护仓库和调研实现方案。
 
-## Default Codex Workflow
+## 默认工作流程
 
 ```text
-Understand request
+理解任务
 ↓
-Inspect repository
+检查项目
 ↓
-Understand existing architecture
+理解现有架构
 ↓
-Determine minimum coherent change
+确定最小完整改动
 ↓
-Implement
+实现
 ↓
-Run relevant verification
+执行相关验证
 ↓
-Inspect diff
+检查修改差异
 ↓
-Explain result
+说明结果
 ```
 
 具体执行细节见 [AI Coding Workflow](./workflows/ai-coding.md)。
 
-## Task Size Policy
+## 不同规模的任务怎么处理
 
-### Small Task
+### 小任务
 
-修改单个函数、小型 UI、文案或 config 时，Codex 可以在确认局部上下文后直接执行并做基本检查。
+修改单个函数、小型界面、文案或配置时，Codex 可以在确认相关上下文后直接执行，并完成基本检查。
 
-### Medium Task
+### 中型任务
 
-Codex 必须检查相关文件、理解局部 Architecture、形成简洁计划、实现并验证。
+Codex 必须先检查相关文件、理解局部结构，再用简洁计划完成实现和验证。
 
-### Large Task
+### 大型任务
 
-新系统、major feature、Architecture refactor、Research OS、完整网站或 model pipeline，应先完成：
+新系统、大型功能、架构重构、Research OS、完整网站或模型流水线，应先完成：
 
 ```text
-Repository reconnaissance
-Architecture understanding
-Dependency understanding
-Risk identification
-Implementation plan
+了解项目现状
+理解系统架构
+理解关键依赖
+识别主要风险
+制定实现计划
 ```
 
-计划应与风险匹配，不为形式创建巨大的 planning document。
+计划深度应与任务风险匹配，不为形式创建庞大的计划文档。
 
-## Architecture Awareness Rule
+## 重要修改后说明什么
 
-重要修改结束后，Codex 应说明修改的模块、新 Data Flow、新 abstraction、设计理由、trade-off 和新增 technical debt。没有变化的项目不必机械重复这些字段。
+重要修改结束后，Codex 应说明改了哪些模块、数据如何流动、新增了什么抽象、为什么这样设计、有哪些取舍，以及是否产生技术债。没有相关变化时不必机械罗列。
 
-## Verification Policy
+## 验证要求
 
-- Low risk：syntax 与 basic check。
-- Medium risk：相关 unit 或 integration test。
-- High risk：tests、edge cases、regression 与必要的 manual validation steps。
+- 低风险：语法和基本检查。
+- 中风险：相关单元测试或集成测试。
+- 高风险：测试、边界情况、回归检查和必要的人工验证步骤。
 
 未运行的测试必须明确标为未运行，禁止声称已经通过。
 
-## Scope Discipline
+## 修改范围
 
-Codex 不应在缺乏必要性时大规模重构、升级无关 dependencies、为了“更漂亮”修改大量代码，或触碰用户未授权的系统。
+Codex 不应在没有必要时大规模重构、升级无关依赖、为了“更漂亮”修改大量代码，或触碰用户未授权的系统。
 
-优先采用 **minimum coherent change**：完成目标所需的最小完整改动，而不是机械追求 minimum lines changed。
+优先采用“最小完整改动”：只修改完成目标所必需的内容，同时保证结果完整可用；不是机械追求修改行数最少。
 
-## Ask vs Act Policy
+## 什么时候直接做，什么时候询问
 
-默认尽可能自主完成。能通过检查 Repository、docs、code、command 或已有 project context 解决的问题，不应立即询问用户。只有多个无法可靠推断的选择会显著改变结果时，才请求输入。
+默认尽可能自主完成。能通过检查项目、文档、代码、命令输出或已有上下文解决的问题，不应立即询问用户。只有多个选择无法可靠推断，而且会明显改变结果时，才请求用户决定。

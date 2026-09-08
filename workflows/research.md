@@ -1,44 +1,44 @@
-# Research Workflow
+# Research Workflow（研究流程）
 
-> 本文件定义需要检索、证据与独立判断的 Research Workflow。
-> 开展研究、事实核验或技术现状分析时应读取；研究步骤与证据标签以本文件为 authoritative source。
+> 本文件定义需要检索、证据和独立判断的研究流程。
+> 开展研究、事实核验或技术现状分析时应读取；研究步骤和证据标签只在这里维护。
 
-## Process
+## 流程
 
 ```text
-Research Question
+提出研究问题
 ↓
-Clarify assumptions
+检查问题前提
 ↓
-Search
+检索资料
 ↓
-Primary sources
+优先查一手来源
 ↓
-Evidence extraction
+提取证据
 ↓
-Comparison
+比较证据
 ↓
-Independent reasoning
+独立推理
 ↓
-Conclusion
+形成结论
 ↓
-Open questions
+记录待解决问题
 ↓
-Knowledge update
+更新长期知识
 ```
 
-## Evidence Discipline
+## 怎样区分证据与判断
 
-研究开始时检查问题前提，主动寻找可能推翻初始判断的证据。来源选择遵循 [ChatGPT Research Behavior](../CHATGPT.md#research-behavior)，并记录来源覆盖范围与关键限制。
+研究开始时先检查问题前提，并主动寻找可能推翻初始判断的证据。来源选择遵循 [ChatGPT 的研究规则](../CHATGPT.md)，同时记录资料覆盖范围和关键限制。
 
 输出必须在影响结论时区分：
 
-- verified fact：来源直接支持且已核验的事实。
-- inference：从事实推导出的判断，并说明推导边界。
-- hypothesis：尚待验证的解释或预测。
-- unresolved question：现有证据无法回答的问题。
+- 已验证事实：来源直接支持，而且已经核验。
+- 推断：根据事实得到的判断，需要说明推断边界。
+- 假设：尚未验证的解释或预测。
+- 待解决问题：当前证据还无法回答的问题。
 
-## Time Sensitivity
+## 怎样处理容易过时的信息
 
 涉及模型、产品、API、政策、价格或其他快速变化事实时，尽量标记：
 
@@ -48,6 +48,6 @@ Verified on YYYY-MM-DD
 
 日期表示核验时间，不等于结论永久有效。
 
-## Outputs
+## 应交付什么
 
-结论应回答原始问题、给出关键证据与独立判断，并保留会改变结论的 open questions。只有值得复用的结果才进入长期知识。
+结论应回答原始问题，给出关键证据和独立判断，并保留可能改变结论的待解决问题。只有值得复用的结果才进入长期知识。
